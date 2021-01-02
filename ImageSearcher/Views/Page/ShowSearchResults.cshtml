@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ShowSearchResults";
+}
+
+@model List<ImageSearcher.Models.ResultItem>
+
+<ul>
+    @foreach (var item in Model)
+    {
+    <li class="list_item" width="500">
+        <div class="link">@item.Link</div> 
+        <img class="cse_image" src="@item.Image"/>
+        <br />
+        <a class="string_link" href="@item.Link">@item.Title</a>
+        <br />
+        <span class="snippet">@item.Snippet</span>
+    </li>
+    }
+</ul>
