@@ -13,7 +13,7 @@ using Microsoft.CSharp.RuntimeBinder;
 
 namespace ImageSearcher.Controllers
 {
-    //API: AIzaSyADTHzE85eCriGDMLjXx0WSEc2wowwJefA
+    //API:
     //CX: 017785651468861548536:noz7t3te8rw
 
     public class PageController : Controller
@@ -36,7 +36,7 @@ namespace ImageSearcher.Controllers
         public ActionResult ShowSearchResults()
         {
             string searchQuery = Request["search"];
-            string apiKey = "AIzaSyADTHzE85eCriGDMLjXx0WSEc2wowwJefA";
+            string apiKey = "";
             string cx = "017785651468861548536:noz7t3te8rw";
             var results = new List<ResultItem>();
 
